@@ -55,7 +55,7 @@ async def play(_, message: Message):
 
     await message.delete()
 
-    fallen = await message.reply("Mengunduh\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%")
+    fallen = await message.reply("**Mengunduh**\n\nMohon tunggu sebentar\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%")
 
     chumtiya = message.from_user.mention
 
@@ -207,7 +207,7 @@ async def play(_, message: Message):
                     InlineKeyboardButton("Support Grup", url=f"https://t.me/{SUPPORT_GROUP}"),
                     InlineKeyboardButton("Update", url=f"https://t.me/AzumanProjects")
                 ],
-                [InlineKeyboardButton("Tutup", callback_data="close_play")
+                [InlineKeyboardButton("🗑️Tutup", callback_data="close_play")
                 ],
             ]
         ),
@@ -225,14 +225,14 @@ async def play(_, message: Message):
             )
 
         await message.reply_text(
-            text=f"**Sedang streaming**\n📌 **Judul :** [{title[:65]}]({url})\n🕕 **Durasi :** `{duration}` Menit\n👤 **Diputar oleh** {chumtiya}\n📡 **Streaming di​:** `{message.chat.title}`\n🎥 **Tipe stream:** YouTube music\n",
+            text=f"**SEDANG STREAMING**\n\n📌 Judul : [{title[:65]}]({url})\n🕕 Durasi : `{duration}` Menit\n👤 Diputar oleh : {chumtiya}\n📡 Streaming di​: `{message.chat.title}`\n🎥 Tipe stream: YouTube Music\n",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Support Grup", url=f"https://t.me/{SUPPORT_GROUP}"),
-                    InlineKeyboardButton("Update", url=f"https://t.me/AzumanProjects")
+                    InlineKeyboardButton("📥Support Grup", url=f"https://t.me/{SUPPORT_GROUP}"),
+                    InlineKeyboardButton("🔥Update", url=f"https://t.me/AzumanProjects")
                 ],
-                [InlineKeyboardButton("Tutup", callback_data="close_play")
+                [InlineKeyboardButton("🗑️Tutup", callback_data="close_play")
                 ],
             ]
         ),
