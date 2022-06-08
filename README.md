@@ -2,7 +2,7 @@
 
 ### A bot that can play music on Telegram Group and Channel Voice Chats
 
-<img src="https://telegra.ph/file/cfd881b09f26fbe7a3fe0.jpg" align="center" width="456" height="330"/>
+<img src="https://telegra.ph/file/cfd881b09f26fbe7a3fe0.jpg" align="center" width="500" height="500"/>
 
 ### Deploy To Heroku
 
