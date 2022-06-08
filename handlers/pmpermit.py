@@ -18,19 +18,19 @@ async def pmPermit(client: USER, message: Message):
                 return
             await USER.send_message(
                 message.chat.id,
-                f"Hei {message.from_user.mention()},\nSaya adalah [{bn}](t.me/{lel}) akun asisten.\n\nJangan mencoba spam di PESAN PRIBADI ! [Azuman](t.me/erojistrix).\n",
+                f"Hai {message.from_user.mention()},\n\nSaya adalah akun asiten dari [{bn}](t.me/{lel}).\n\nJangan mencoba spam di PESAN PRIBADI ! supaya tidak terblok !\n\nJika terblok Hubungi[Azuman](t.me/erojistrix).",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "Bot", url=f"https://t.me/{lel}"
+                        "🤖 Bot", url=f"https://t.me/{lel}"
                     ),
                     InlineKeyboardButton(
-                        "Support", url="https://t.me/AzumanProjects"
+                        "📥 Support", url="https://t.me/AzumanProjects"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "Developer", url=f"https://t.me/erojistrix"
+                        "👤 Developer", url=f"https://t.me/erojistrix"
                     )]
             ]
         ),
@@ -59,7 +59,7 @@ async def autopmPermiat(client: USER, message: Message):
     chat_id = message.chat.id
     if not chat_id in pchats:
         pchats.append(chat_id)
-        await message.reply_text("**✅ Disetuji pesan pribadi oleh admin ...**")
+        await message.reply_text("**✅ Disetujui pesan pribadi oleh admin ...**")
         return
     message.continue_propagation()    
     
@@ -68,7 +68,7 @@ async def pmPermiat(client: USER, message: Message):
     chat_id = message.chat.id
     if not chat_id in pchats:
         pchats.append(chat_id)
-        await message.reply_text("**✅ Disetuji untuk PM...**")
+        await message.reply_text("**✅ Disetujui untuk PM...**")
         return
     message.continue_propagation()    
     
