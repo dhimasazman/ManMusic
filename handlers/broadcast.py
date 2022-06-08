@@ -15,17 +15,17 @@ async def broadcast(_, message: Message):
     if message.from_user.id not in SUDO_USERS:
         return
     else:
-        wtf = await message.reply("`✅Sᴛᴀʀᴛɪɴɢ ʙʀᴏᴀᴅᴄᴀsᴛ...`")
+        wtf = await message.reply("✅Memulai broadcast...")
         if not message.reply_to_message:
-            await wtf.edit("**__ᴘʟᴇᴀsᴇ ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ sᴛᴀʀᴛ ʙʀᴏᴀᴅᴄᴀsᴛ...__**")
+            await wtf.edit("**Mohon untuk membalas pesan untuk pesan Broadcast !**")
             return
         lmao = message.reply_to_message.text
         async for dialog in Anonymous.iter_dialogs():
             try:
                 await Anonymous.send_message(dialog.chat.id, lmao)
                 sent = sent+1
-                await wtf.edit(f"`sᴜᴍɪᴛ sɪʀ ʙʀᴏᴀᴅᴄᴀsᴛɪɴɢ` \n\n**sᴇɴᴛ ᴛᴏ:** `{sent}` ᴄʜᴀᴛs \n**ғᴀɪʟᴇᴅ ɪɴ:** {failed} ᴄʜᴀᴛs")
+                await wtf.edit(f"Hasil broadcast \n\n**Terkirim ke:** `{sent}` ᴄʜᴀᴛs \n**Gagal :** {failed} chat")
                 await asyncio.sleep(0.3)
             except:
                 failed=failed+1
-        await message.reply_text(f"**✅ ʙʀᴏᴀᴅᴄᴀsᴛᴇᴅ sᴜᴄᴄᴇssꜰᴜʟʟʏ** \n\n**ʙʀᴏᴀᴅᴄᴀsᴛᴇᴅ ᴛᴏ :** `{sent}` **ᴄʜᴀᴛs** \n**ꜰᴀɪʟᴇᴅ ɪɴ​ :** `{failed}` **ᴄʜᴀᴛs**")
+        await message.reply_text(f"**✅ Broadcast berhasil !** \n\n**Disiarkan ke:** `{sent}` **ᴄʜᴀᴛs** \n**Gagal dalam:** `{failed}` **chat**")

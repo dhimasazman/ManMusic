@@ -34,7 +34,7 @@ async def edit_or_reply(msg: Message, **kwargs):
 @sudo_users_only
 async def executor(client, message):
     if len(message.command) < 2:
-        return await edit_or_reply(message, text="» ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ sᴏ ɪ ᴡɪʟʟ ᴛʀʏ ᴛᴏ ᴇxᴇᴄᴜᴛᴇ ɪᴛ.")
+        return await edit_or_reply(message, text="Ketikan beberapa teks , saya akan coba untuk mencoba mengeksekusinya !")
     try:
         cmd = message.text.split(" ", maxsplit=1)[1]
     except IndexError:
@@ -62,7 +62,7 @@ async def executor(client, message):
         evaluation = stdout
     else:
         evaluation = "Success"
-    final_output = f"**ᴏᴜᴛᴩᴜᴛ**:\n\n```{evaluation.strip()}```"
+    final_output = f"**Output**:\n\n```{evaluation.strip()}```"
     if len(final_output) > 4096:
         filename = "output.txt"
         with open(filename, "w+", encoding="utf8") as out_file:
@@ -79,7 +79,7 @@ async def executor(client, message):
         )
         await message.reply_document(
             document=filename,
-            caption=f"**ɪɴᴩᴜᴛ:**\n`{cmd[0:980]}`\n\n**ᴏᴜᴛᴩᴜᴛ:**\n`ᴀᴛᴛᴀᴄʜᴇᴅ ᴅᴏᴄᴜᴍᴇɴᴛ`",
+            caption=f"**Input:**\n`{cmd[0:980]}`\n\n**Output:**\n`Dokumen terlampir`",
             quote=False,
             reply_markup=keyboard,
         )
@@ -147,7 +147,7 @@ async def shellrunner(client, message):
                 tb=exc_tb,
             )
             return await edit_or_reply(
-                message, text=f"**ᴇʀʀᴏʀ:**\n\n```{''.join(errors)}```"
+                message, text=f"**Error:**\n\n```{''.join(errors)}```"
             )
         output = process.stdout.read()[:-1].decode("utf-8")
     if str(output) == "\n":
@@ -163,6 +163,6 @@ async def shellrunner(client, message):
                 caption="`ᴏᴜᴛᴩᴜᴛ`",
             )
             return os.remove("output.txt")
-        await edit_or_reply(message, text=f"**ᴏᴜᴛᴩᴜᴛ:**\n\n```{output}```")
+        await edit_or_reply(message, text=f"**Output:**\n\n```{output}```")
     else:
-        await edit_or_reply(message, text="**ᴏᴜᴛᴩᴜᴛ: **\n`No output`")
+        await edit_or_reply(message, text="**Output: **\n`No Output`")

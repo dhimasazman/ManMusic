@@ -19,7 +19,7 @@ ACTV_CALLS = []
 async def pause(_, message: Message):
     await message.delete()
     await callsmusic.pytgcalls.pause_stream(message.chat.id)
-    await message.reply_text("**» ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ ɴᴏᴛʜɪɴɢ ɪs ᴘʟᴀʏɪɴɢ...**".format( message.from_user.mention ), )
+    await message.reply_text("Tidak ada pemutaran di OS / VCG !".format( message.from_user.mention ), )
 
 
 @Client.on_message(command(["resume"]) & other_filters)
@@ -28,7 +28,7 @@ async def pause(_, message: Message):
 async def resume(_, message: Message):
     await message.delete()
     await callsmusic.pytgcalls.resume_stream(message.chat.id)
-    await message.reply_text("**» ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ sᴜᴄᴄᴇsғᴜʟʟʏ ʀᴇsᴜᴍᴇᴅ...**".format( message.from_user.mention ), )
+    await message.reply_text("Musik berhasil dihentikan ⏸".format( message.from_user.mention ), )
 
 
 @Client.on_message(command(["end", " stop"]) & other_filters)
@@ -42,7 +42,7 @@ async def stop(_, message: Message):
 
     await message.delete()
     await callsmusic.pytgcalls.leave_group_call(message.chat.id)
-    await message.reply_text("**» ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ ɴᴏᴛʜɪɴɢ ɪs sᴛʀᴇᴀᴍɪɴɢ...**".format(
+    await message.reply_text("Tidak ada pemutaran di OS / VCG !".format(
       message.from_user.mention ), )
 
 @Client.on_message(command(["skip", "next"]) & other_filters)
@@ -55,7 +55,7 @@ async def skip(_, message: Message):
     for x in callsmusic.pytgcalls.active_calls:
         ACTV_CALLS.append(int(x.chat_id))
     if int(chat_id) not in ACTV_CALLS:
-        await message.reply_text("**» ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ ɴᴏᴛʜɪɴɢ ɪs ᴘʟᴀʏɪɴɢ ᴛᴏ sᴋɪᴘ...**")
+        await message.reply_text("Tidak ada lagu untuk di skip !")
     else:
         queues.task_done(chat_id)
         
@@ -70,4 +70,4 @@ async def skip(_, message: Message):
                     ),
                 ),
             )
-    await message.reply_text("» ᴛʀᴀᴄᴋ sᴋɪᴘᴘᴇᴅ".format( message.from_user.mention ), )
+    await message.reply_text("Lagu dilewati ⏩".format( message.from_user.mention ), )

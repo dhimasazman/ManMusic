@@ -18,19 +18,19 @@ async def pmPermit(client: USER, message: Message):
                 return
             await USER.send_message(
                 message.chat.id,
-                f"ʜᴇʏ {message.from_user.mention()},\nᴛʜɪs ɪs [{bn}](t.me/{lel}) ʙᴏᴛ ᴀssɪsᴛᴀɴᴛ ᴀᴄᴄᴏᴜɴᴛ.\n\nᴅᴏɴ'ᴛ ᴛʀʏ ᴛᴏ sᴘᴀᴍ ʜᴇʀᴇ ᴇʟsᴇ ʏᴏᴜ ᴡɪʟʟ ɢᴇᴛ ꜰᴜ*ᴋᴇᴅ ʙʏ [sᴜᴍɪᴛ ʏᴀᴅᴀᴠ](t.me/SIMPLE_MUNDAA).\n",
+                f"Hei {message.from_user.mention()},\nSaya adalah [{bn}](t.me/{lel}) akun asisten.\n\nJangan mencoba spam di PESAN PRIBADI ! [Azuman](t.me/erojistrix).\n",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "• ʙᴏᴛ •", url=f"https://t.me/{lel}"
+                        "Bot", url=f"https://t.me/{lel}"
                     ),
                     InlineKeyboardButton(
-                        "• sᴜᴩᴩᴏʀᴛ •", url="https://t.me/TechQuardSupport"
+                        "Support", url="https://t.me/AzumanProjects"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "• ᴅᴇᴠᴇʟᴏᴘᴇʀ​​ •", url=f"https://t.me/Simple_Mundaa"
+                        "Developer", url=f"https://t.me/erojistrix"
                     )]
             ]
         ),
@@ -47,11 +47,11 @@ async def bye(client: Client, message: Message):
         queryy = text[1]
         if queryy == "on":
             PMSET = True
-            await message.reply_text("**✅ ᴘᴍ-ᴘᴇʀᴍɪᴛ ᴛᴜʀɴᴇᴅ ᴏɴ...**")
+            await message.reply_text("**✅ PM-PERMIT diaktifkan...**")
             return
         if queryy == "off":
             PMSET = None
-            await message.reply_text("**❎ ᴘᴍ-ᴘᴇʀᴍɪᴛ ᴛᴜʀɴᴇᴅ ᴏғғ...**")
+            await message.reply_text("**❎ PM-PERMIT dinonaktifkan...**")
             return
 
 @USER.on_message(filters.text & filters.private & filters.me)        
@@ -59,7 +59,7 @@ async def autopmPermiat(client: USER, message: Message):
     chat_id = message.chat.id
     if not chat_id in pchats:
         pchats.append(chat_id)
-        await message.reply_text("**✅ ᴀᴘᴘʀᴏᴠᴇᴅ ᴛᴏ ᴘᴍ ᴅᴜᴇ ᴛᴏ ᴏᴜᴛɢᴏɪɴɢ ᴍᴇssᴀɢᴇ...**")
+        await message.reply_text("**✅ Disetuji pesan pribadi oleh admin ...**")
         return
     message.continue_propagation()    
     
@@ -68,7 +68,7 @@ async def pmPermiat(client: USER, message: Message):
     chat_id = message.chat.id
     if not chat_id in pchats:
         pchats.append(chat_id)
-        await message.reply_text("**✅ ᴀᴘᴘʀᴏᴠᴇᴅ ᴛᴏ ᴘᴍ...**")
+        await message.reply_text("**✅ Disetuji untuk PM...**")
         return
     message.continue_propagation()    
     
@@ -78,6 +78,6 @@ async def rmpmPermiat(client: USER, message: Message):
     chat_id = message.chat.id
     if chat_id in pchats:
         pchats.remove(chat_id)
-        await message.reply_text("**❎ ᴅɪs-ᴀᴘᴘʀᴏᴠᴇᴅ ᴛᴏ ᴘᴍ...**")
+        await message.reply_text("**❎ Ditolak untuk PM...**")
         return
     message.continue_propagation()
