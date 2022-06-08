@@ -26,7 +26,7 @@ def song(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply("**Downloading**\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%")
+    m = message.reply("**Mengunduh**\n\nMohon tunggu sebentart\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -45,7 +45,7 @@ def song(client, message):
 
     except Exception as e:
         m.edit(
-            "» Tidak ditemukan , Coba untuk menacari lagu lainnya."
+            "Tidak ditemukan , Coba untuk mencari lagu lainnya."
         )
         print(str(e))
         return
@@ -63,7 +63,7 @@ def song(client, message):
         message.reply_audio(audio_file, caption=rep, thumb=thumb_name, parse_mode='md', title=title, duration=dur)
         m.delete()
     except Exception as e:
-        m.edit("**Pengunduhan gagal , Mohon laporkan ke [{bn} sᴜᴩᴩᴏʀᴛ](t.me/{bu}) 😊**")
+        m.edit("**Pengunduhan gagal , Mohon laporkan ke [{bn} Support](t.me/{bu}) 😊**")
         print(e)
 
     try:
