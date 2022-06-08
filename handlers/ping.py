@@ -55,15 +55,15 @@ async def help(client: Client, message: Message):
         caption="Pinging...",
     )
     await rahul.edit_text(
-        f"""<b> P O N G ! 😂</b>\n  🏓 `{resp} ᴍs`\n\n<b><u>{BOT_NAME} Status system :</u></b>\n\n• Uptime : {bot_uptime}\n• CPU : {cpu}%\n• DISK : {disk}%\n• RAM : {mem}""",
+        f"""<b> P O N G ! 😂</b>\n 🏓 `{resp} ᴍs`\n\n<b><u>{BOT_NAME} Status system :</u></b>\n\n• Uptime : {bot_uptime}\n• CPU : {cpu}%\n• DISK : {disk}%\n• RAM : {mem}""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "• sᴜᴘᴘᴏʀᴛ •", url=f"https://t.me/{SUPPORT_GROUP}"
+                        "📥 Support", url=f"https://t.me/{SUPPORT_GROUP}"
                     ),
                     InlineKeyboardButton(
-                        "• ʏᴏᴜᴛᴜʙᴇ •", url="https://youtube.com/channel/UCtI7hbY-BD7wvuIzoSU0cEw"
+                        "📺 Youtube", url="https://www.youtube.com/c/dhimasazman"
                     )
                 ]
             ]
