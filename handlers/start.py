@@ -41,7 +41,7 @@ Jika kalian punya pertanyaan atau masalah lainnya kalian bisa hubungi [Owner](t.
                         "Inline", switch_inline_query_current_chat=""
                     ),
                     InlineKeyboardButton(
-                        "📺 Youtube", url="https://youtube.com/channel/dhimasazman"
+                        "📺 Youtube", url="https://youtube.com/c/dhimasazman"
                     )]
             ]
        ),
