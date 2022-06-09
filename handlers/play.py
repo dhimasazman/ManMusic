@@ -225,7 +225,7 @@ async def play(_, message: Message):
             )
 
         await message.reply_text(
-            text=f"**🎥Sedang streaming :**\n\n**Judul** : [{title[:65]}]({url})\n🕕**Durasi** : `{duration}` Menit\n👤**Diputar oleh** : {chumtiya}\n📡 **Streaming di** : `{message.chat.title}`\n\n_⚡️Powered by_ : [{bn}](t.me/{bu})\n",
+            text=f"**🎥Sedang streaming :**\n\n**Judul** : [{title[:65]}]({url})\n🕕**Durasi** : `{duration}` Menit\n👤**Diputar oleh** : {chumtiya}\n\n📡**Streaming di** : `{message.chat.title}`\n",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
