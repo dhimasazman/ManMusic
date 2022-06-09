@@ -200,12 +200,12 @@ async def play(_, message: Message):
     if int(chat_id) in ACTV_CALLS:
         position = await queues.put(chat_id, file=file_path)
         await message.reply_text(
-            text=f"**Streaming dalam antrian ke {position} **\n📌 **Judul :**[{title[:65]}]({url})\n\n🕕** Durasi :** `{duration}` **Menit**\n👤** Diputar oleh : **{chumtiya}",
+            text=f"**Streaming dalam antrian ke {position} **\n\n **Judul :** [{title[:65]}]({url})\n\n🕕** Durasi :** `{duration}` **Menit**\n👤** Diputar oleh : **{chumtiya}",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Support Grup", url=f"https://t.me/{SUPPORT_GROUP}"),
-                    InlineKeyboardButton("Update", url=f"https://t.me/AzumanProjects")
+                    InlineKeyboardButton("📥Support Grup", url=f"https://t.me/{SUPPORT_GROUP}"),
+                    InlineKeyboardButton("🔥Update", url=f"https://t.me/AzumanProjects")
                 ],
                 [InlineKeyboardButton("🗑️Tutup", callback_data="close_play")
                 ],
@@ -225,7 +225,7 @@ async def play(_, message: Message):
             )
 
         await message.reply_text(
-            text=f"**SEDANG STREAMING**\n\n📌 Judul : [{title[:65]}]({url})\n🕕 Durasi : `{duration}` Menit\n👤 Diputar oleh : {chumtiya}\n📡 Streaming di​: `{message.chat.title}`\n🎥 Tipe stream: YouTube Music\n",
+            text=f"**🎥Sedang streaming :**\n\n**Judul** : [{title[:65]}]({url})\n🕕**Durasi** : `{duration}` Menit\n👤**Diputar oleh** : {chumtiya}\n📡 **Streaming di** : `{message.chat.title}`\n\n_⚡️Powered by_ : [{bn}](t.me/{bu})\n",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
