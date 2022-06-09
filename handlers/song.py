@@ -55,7 +55,7 @@ def song(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f"**Hasil pengunduhan**\n\n👤Diminta oleh :{chutiya}\n🔍Hasil penelusuruan : {query}\n\n_⚡Powered by_ [{bn}](t.me/{bu})"
+        rep = f"**Hasil pengunduhan**\n\n👤Diminta oleh :{chutiya}\n🔍Hasil penelusuruan : {query}\n\n⚡𝘗𝘰𝘸𝘦𝘳𝘦𝘥 𝘣𝘺 [{bn}](t.me/{bu})"
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
