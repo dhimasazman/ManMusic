@@ -22,12 +22,12 @@ Jika kalian punya pertanyaan atau masalah lainnya kalian bisa hubungi [Owner](t.
 
 **Jika kalian ingi donasi supaya projek ini terus berkembang kalian boleh donasi [Disini](https://bit.ly/donasidhimasazman)**
 
-[Channel](t.me/AzumanProjects) • [Grup](t.me/AzumanSquad)""",
+[Channel](t.me/AzumanProjects) • [Grup](t.me/AzumanSquad) • [Repo](https://github.com/dhimasazman/ManMusic)""",
     reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Tambahkan saya ke grup anda ➕", url=f"https://t.me/{bu}?startgroup=true"
+                        "➕ Tambahkan saya ke grup anda", url=f"https://t.me/{bu}?startgroup=true"
                        ),
                   ],[
                     InlineKeyboardButton(
