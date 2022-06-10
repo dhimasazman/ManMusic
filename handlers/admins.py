@@ -13,13 +13,13 @@ from pytgcalls.types.input_stream import InputStream
 
 ACTV_CALLS = []
 
-@Client.on_message(command(["pause", "rukja"]) & other_filters)
+@Client.on_message(command(["pause", "jeda"]) & other_filters)
 @errors
 @authorized_users_only
 async def pause(_, message: Message):
     await message.delete()
     await callsmusic.pytgcalls.pause_stream(message.chat.id)
-    await message.reply_text("Lagu berhasil dipause ".format( message.from_user.mention ), )
+    await message.reply_text("Lagu berhasil dijeda ! ".format( message.from_user.mention ), )
 
 
 @Client.on_message(command(["resume"]) & other_filters)
@@ -28,15 +28,14 @@ async def pause(_, message: Message):
 async def resume(_, message: Message):
     await message.delete()
     await callsmusic.pytgcalls.resume_stream(message.chat.id)
-    await message.reply_text("Musik berhasil dilanjutkan".format( message.from_user.mention ), )
+    await message.reply_text("Musik berhasil dilanjutkan !".format( message.from_user.mention ), )
 
 
-@Client.on_message(command(["end", " stop"]) & other_filters)
+@Client.on_message(command(["end", "berhenti"]) & other_filters)
 @errors
 @authorized_users_only
 
 async def stop(_, message: Message):
-    chumtiya = message.from_user.mention
     try:
         callsmusic.queues.clear(message.chat.id)
     except QueueEmpty:
@@ -44,10 +43,10 @@ async def stop(_, message: Message):
 
     await message.delete()
     await callsmusic.pytgcalls.leave_group_call(message.chat.id)
-    await message.reply_text("Lagu diberhentikan oleh {chumtiya} ".format(
+    await message.reply_text("Lagu berhasail diberhentikan !".format(
       message.from_user.mention ), )
 
-@Client.on_message(command(["skip", "next"]) & other_filters)
+@Client.on_message(command(["skip", "lewati"]) & other_filters)
 @errors
 @authorized_users_only
 async def skip(_, message: Message):
@@ -72,4 +71,4 @@ async def skip(_, message: Message):
                     ),
                 ),
             )
-    await message.reply_text("Lagu berhasil diskip".format( message.from_user.mention ), )
+    await message.reply_text("Lagu berhasil dilewati !".format( message.from_user.mention ), )
