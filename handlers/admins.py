@@ -19,7 +19,7 @@ ACTV_CALLS = []
 async def pause(_, message: Message):
     await message.delete()
     await callsmusic.pytgcalls.pause_stream(message.chat.id)
-    await message.reply_text("Lagu berhasil dijeda ! ".format( message.from_user.mention ), )
+    await message.reply_text("Lagu berhasil dijeda ⏸️ ".format( message.from_user.mention ), )
 
 
 @Client.on_message(command(["resume"]) & other_filters)
@@ -28,7 +28,7 @@ async def pause(_, message: Message):
 async def resume(_, message: Message):
     await message.delete()
     await callsmusic.pytgcalls.resume_stream(message.chat.id)
-    await message.reply_text("Musik berhasil dilanjutkan !".format( message.from_user.mention ), )
+    await message.reply_text("Musik berhasil dilanjutkan ▶️".format( message.from_user.mention ), )
 
 
 @Client.on_message(command(["end", "berhenti"]) & other_filters)
@@ -43,7 +43,7 @@ async def stop(_, message: Message):
 
     await message.delete()
     await callsmusic.pytgcalls.leave_group_call(message.chat.id)
-    await message.reply_text("Lagu berhasail diberhentikan !".format(
+    await message.reply_text("Lagu berhasail diberhentikan ⏹️".format(
       message.from_user.mention ), )
 
 @Client.on_message(command(["skip", "lewati"]) & other_filters)
@@ -71,4 +71,4 @@ async def skip(_, message: Message):
                     ),
                 ),
             )
-    await message.reply_text("Lagu berhasil dilewati !".format( message.from_user.mention ), )
+    await message.reply_text("Lagu berhasil dilewati ⏭️".format( message.from_user.mention ), )
