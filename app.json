@@ -1,7 +1,7 @@
 {
   "name": "ManMusic",
   "logo": "https://telegra.ph/file/9b0dcdfc46809ec91e61c.jpg",
-  "description": "Saya adalah bot yang bisa streaming di OS/VCG !. Powered by PyTgCalls.",
+  "description": "Saya adalah bot yang bisa streaming di OS/VCG ! Powered by PyTgCalls.",
   "keywords": ["music", "voicechat", "telegram", "fallen"],
   "repository": "https://github.com/dhimasazman/ManMusic",
   "stack": "container",
