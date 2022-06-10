@@ -18,7 +18,7 @@ async def pmPermit(client: USER, message: Message):
                 return
             await USER.send_message(
                 message.chat.id,
-                f"Hai {message.from_user.mention()},\n\nSaya adalah akun asiten dari [{bn}](t.me/{lel}).\n\nJangan mencoba spam di PESAN PRIBADI ! supaya tidak terblok !\n\nJika terblok Hubungi[Azuman](t.me/erojistrix).",
+                f"Hai {message.from_user.mention()},\n\nSaya adalah akun asisten dari [{bn}](t.me/{lel}).\n\nJangan mencoba spam di PESAN PRIBADI , supaya tidak terblok !\n\nJika terblok Hubungi\n\n\n\n[Owner](t.me/erojistrix).",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -45,11 +45,11 @@ async def bye(client: Client, message: Message):
         global PMSET
         text = message.text.split(" ", 1)
         queryy = text[1]
-        if queryy == "on":
+        if queryy == "enable":
             PMSET = True
             await message.reply_text("**✅ PM-PERMIT diaktifkan...**")
             return
-        if queryy == "off":
+        if queryy == "disable":
             PMSET = None
             await message.reply_text("**❎ PM-PERMIT dinonaktifkan...**")
             return
@@ -59,7 +59,7 @@ async def autopmPermiat(client: USER, message: Message):
     chat_id = message.chat.id
     if not chat_id in pchats:
         pchats.append(chat_id)
-        await message.reply_text("**✅ Disetujui pesan pribadi oleh admin ...**")
+        await message.reply_text("**✅ Disetujui pesan pribadi oleh admin...**")
         return
     message.continue_propagation()    
     
