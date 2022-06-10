@@ -27,9 +27,9 @@ Jika kalian punya pertanyaan atau masalah lainnya kalian bisa hubungi [Owner](t.
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Tambahkan saya ke grup anda", url=f"https://t.me/{bu}?startgroup=true"
-                       ),
-                  ],[
+                    "➕ Tambahkan saya ke grup anda ➕", url=f"https://t.me/{bu}?startgroup=true"
+                    ),
+                ],[
                     InlineKeyboardButton(
                         "👤 Developer", url=f"https://t.me/erojistrix"
                     ),
@@ -41,8 +41,13 @@ Jika kalian punya pertanyaan atau masalah lainnya kalian bisa hubungi [Owner](t.
                         "Inline", switch_inline_query_current_chat=""
                     ),
                     InlineKeyboardButton(
-                        "📺 Youtube", url="https://youtube.com/c/dhimasazman"
-                    )]
+                        "📺 Youtube", url="https://youtube.com/channel/dhimasazman"
+                    )
+                ],[
+                    InlineKeyboardButton(
+                        "📝 Repo", url=f"https://github.com/dhimasazman/ManMusic"
+                    ),
+                ]
             ]
        ),
     )
