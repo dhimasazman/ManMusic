@@ -1,7 +1,9 @@
+<p align="center">
 #### MANMUSIC 🎶
 
 ### A bot that can play music on Telegram Group and Channel Voice Chats
 ### Powered by [PYTGCALLS](https://github.com/pytgcalls/pytgcalls)
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/github/stars/dhimasazman/ManMusic?style=for-the-badge&logo=appveyor" alt="Stars">
