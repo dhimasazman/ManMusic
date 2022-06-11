@@ -28,25 +28,25 @@ Ingin Menambahkan Saya ke Grup Anda? Cukup Klik Tombol di Bawah""",
             [
                 [
                     InlineKeyboardButton(
-                    "➕ Tambahkan saya ke grup anda ➕", url=f"https://t.me/{bu}?startgroup=true"
+                    "➕ ᴛᴀᴍʙᴀʜᴋᴀɴ ꜱᴀʏᴀ ᴋᴇ ɢʀᴜᴘ ᴀɴᴅᴀ", url=f"https://t.me/{bu}?startgroup=true"
                     ),
                 ],[
                     InlineKeyboardButton(
-                        "👤 Developer", url=f"https://t.me/erojistrix"
+                        "👤 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/erojistrix"
                     ),
                     InlineKeyboardButton(
-                        "📥 Join Group", url=f"https://t.me/{SUPPORT_GROUP}"
+                        "📥 ᴏꜰꜰɪᴄɪᴀʟ ɢʀᴏᴜᴘ", url=f"https://t.me/{SUPPORT_GROUP}"
                     )
                 ],[
                     InlineKeyboardButton(
-                        "Inline", switch_inline_query_current_chat=""
+                        "➥ ɪɴʟɪɴᴇ", switch_inline_query_current_chat=""
                     ),
                     InlineKeyboardButton(
-                        "📺 Youtube", url="https://youtube.com/c/dhimasazman"
+                        "📺 ʏᴏᴜᴛᴜʙᴇ", url="https://youtube.com/c/dhimasazman"
                     )
                 ],[
                     InlineKeyboardButton(
-                        "📝 Repository", url=f"https://github.com/dhimasazman/ManMusic"
+                        "📝 ʀᴇᴘᴏꜱɪᴛᴏʀʏ", url=f"https://github.com/dhimasazman/ManMusic"
                     ),
                 ]
             ]
