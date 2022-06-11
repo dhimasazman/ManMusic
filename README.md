@@ -4,7 +4,8 @@
 ### Powered by [PYTGCALLS](https://github.com/pytgcalls/pytgcalls)
 
 <p align="center">
-  <img src="https://telegra.ph/file/9b0dcdfc46809ec91e61c.jpg">
+  <img src="https://img.shields.io/github/stars/dhimasazman/ManMusic?style=for-the-badge&logo=appveyor" alt="Stars">
+  <img src="https://img.shields.io/github/forks/dhimasazman/ManMusic?style=for-the-badge&logo=appveyor" alt="Forks">
 </p>
 
 ### Deploy To Heroku
@@ -18,9 +19,9 @@ get the session string by pressing the button below , and press `p`
 [![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@DhimasAzman/Get-Session)
 
 ### Special thanks to these amazing projects/people which/who help power ManMusic :
-• [Sumit Yadav](http://github.com/Sumit9969/DarkxMusic)
-• [Callsmusic](http://github.com/callsmusic/callsmusic)
-• [Dan](https://github.com/delivrance) For [Pyrogram](https://github.com/pyrogram/pyrogram)
+- [Sumit Yadav](http://github.com/Sumit9969/DarkxMusic)
+- [Callsmusic](http://github.com/callsmusic/callsmusic)
+- [Dan](https://github.com/delivrance) For [Pyrogram](https://github.com/pyrogram/pyrogram)
 
 ### Get Problem? contact me on Telegram
 
