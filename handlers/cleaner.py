@@ -31,9 +31,9 @@ async def clear_raw(_, message: Message):
     if ls_dir:
         for file in os.listdir(raw_files):
             os.remove(os.path.join(raw_files, file))
-        await message.reply_text("✅ **Menghapus semua file RAW{}**".format(bn) )
+        await message.reply_text("✅ **Menghapus semua file RAW {}**".format(bn) )
     else:
-        await message.reply_text("❌ **Tidak ada file RAW**")
+        await message.reply_text("❌ **Tidak ada file RAW** ")
 
 
 @Client.on_message(command(["clear", " rmp"]) & ~filters.edited)

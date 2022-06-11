@@ -1,7 +1,7 @@
 {
   "name": "ManMusic",
   "logo": "https://telegra.ph/file/9b0dcdfc46809ec91e61c.jpg",
-  "description": "Saya adalah bot yang bisa streaming di OS/VCG ! Powered by PyTgCalls.",
+  "description": "Saya adalah projek yang bisa streaming di OS/VCG ! Powered by PyTgCalls.",
   "keywords": ["music", "voicechat", "telegram", "fallen"],
   "repository": "https://github.com/dhimasazman/ManMusic",
   "stack": "container",
@@ -26,11 +26,11 @@
     },
     "API_ID": {
       "description": "Dapatkan di my.telegram.org/apps",
-      "required": false
+      "required": true
     },
     "API_HASH": {
       "description": "Dapatkan di my.telegram.org/apps",
-      "required": false
+      "required": true
     },
     "OWNER_USERNAME": {
       "description": "Nama pengguna orang yang akan diketahui sebagai pemilik bot, tanpa @",

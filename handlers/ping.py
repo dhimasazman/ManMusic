@@ -49,13 +49,13 @@ async def help(client: Client, message: Message):
     start = datetime.now()
     end = datetime.now()
     resp = (end - start).microseconds / 1000
-    await message.reply_sticker("CAACAgUAAxkBAAEENxZiNtPdibVkMsjLZrUG9NK4hotHQgAC2wEAAoM12VSdN9ujxVtnUyME")
+    await message.reply_sticker("⚡️")
     rahul = await message.reply_photo(
         photo=f"{PING_IMG}",
         caption="Pinging...",
     )
     await rahul.edit_text(
-        f"""<b> P O N G ! 😂</b>\n 🏓 `{resp} ᴍs`\n\n<b><u>{BOT_NAME} Status system :</u></b>\n\n• Uptime : {bot_uptime}\n• CPU : {cpu}%\n• DISK : {disk}%\n• RAM : {mem}""",
+        f"""<b>P O N G ! 🏓😜</b>\n\n➥ `{resp} ᴍs`\n\n<b><u>Status system {BOT_NAME} :</u></b>\n\n➥ Uptime : {bot_uptime}\n➥ CPU : {cpu}%\n➥ DISK : {disk}%\n➥ RAM : {mem}""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [

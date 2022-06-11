@@ -43,7 +43,7 @@ def time_to_seconds(time):
 
 
 @Client.on_message(
-    command(["play", "yt", "ytplay"])
+    command(["play", "mainkan", "ytplay"])
     & filters.group
     & ~filters.edited
     & ~filters.forwarded
@@ -55,7 +55,7 @@ async def play(_, message: Message):
 
     await message.delete()
 
-    fallen = await message.reply("**Mengunduh**\n\nMohon tunggu sebentar\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%")
+    fallen = await message.reply("⏳⌛️**Sedang mengunduh mohon tunggu...**")
 
     chumtiya = message.from_user.mention
 
@@ -65,7 +65,7 @@ async def play(_, message: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "SumitYadav"
+        user.first_name = "ManMusic"
     usar = user
     wew = usar.id
     try:
@@ -77,19 +77,19 @@ async def play(_, message: Message):
                     invitelink = await _.export_chat_invite_link(chid)
                 except:
                     await fallen.edit(
-                        "<b>Jadikan saya sebagai admin di grup anda !</b>")
+                        "<b>Jadikan saya sebagai full admin di grup anda !</b>")
                     return
 
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "Asisten berhasil bergabung ke Grup anda ! , sekarang kalian bisa memutar musik")
+                        message.chat.id, "Assalamu'alaikum brother 🙏🏻\n\nAsisten berhasil bergabung ke Grup anda ✅")
 
                 except UserAlreadyParticipant:
                     pass
                 except Exception:
                     await fallen.edit(
-                        f"<b>Asisten belum bergabung ke Grup anda ! , Ketikan /join untuk pertama kalinya anda memutar musik !.")
+                        f"<b>Asisten belum bergabung ke Grup anda ❎, Ketikan /login untuk mengundang asisten.")
     try:
         await USER.get_chat(chid)
     except Exception as e:
@@ -157,7 +157,7 @@ async def play(_, message: Message):
             return await fallen.edit(
                 "Ketikan nama musik untuk memutar musik"
             )
-        await fallen.edit("⚡")
+        await fallen.edit("🗿")
         query = message.text.split(None, 1)[1]
         # print(query)
         try:
@@ -182,7 +182,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             await fallen.edit(
-                "**Lagu tidak ditemukan ❌\n\nCoba untuk menuliskan hudul lagu lebih jelas !**"
+                "**Lagu tidak ditemukan ❌\n\nCoba untuk menuliskan Judul lagu lebih jelas !**"
             )
             print(str(e))
             return
@@ -200,16 +200,16 @@ async def play(_, message: Message):
     if int(chat_id) in ACTV_CALLS:
         position = await queues.put(chat_id, file=file_path)
         await message.reply_text(
-            text=f"🚧**Streaming dalam antrian ke {position} **\n📌 **Judul :**[{title[:65]}]({url})\n\n🕕** Durasi :** `{duration}` **Menit**\n👤** Diputar oleh : **{chumtiya}",
+            text=f"🚧 **LAGU DALAM ANTRIAN KE {position} **\n\n **Judul :**[{title[:65]}]({url})\n\n🕕** Durasi :** `{duration}` **Menit**\n👤** Diputar oleh : **{chumtiya}\n\n⚡𝘱𝘰𝘸𝘦𝘳𝘦𝘥 𝘣y [Azuman-Project](https://t.me/azumanprojects)",
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("📝Command List", url=f"https://telegra.ph/COMMAND-LIST-06-10")
+                [InlineKeyboardButton("📝 Command List", url=f"https://telegra.ph/COMMAND-LIST-06-10")
                 ],
                 [
-                    InlineKeyboardButton("📥Support Grup", url=f"https://t.me/{SUPPORT_GROUP}"),
-                    InlineKeyboardButton("🔥Update", url=f"https://t.me/AzumanProjects")
+                    InlineKeyboardButton("📥 Support Grup", url=f"https://t.me/{SUPPORT_GROUP}"),
+                    InlineKeyboardButton("🔥 Update", url=f"https://t.me/AzumanProjects")
                 ],
-                [InlineKeyboardButton("🗑️Tutup", callback_data="close_play")
+                [InlineKeyboardButton("🗑️ Tutup", callback_data="close_play")
                 ],
             ]
         ),
@@ -227,16 +227,16 @@ async def play(_, message: Message):
             )
 
         await message.reply_text(
-            text=f"**🎥SEDANG STREAMING**\n\n📌 Judul : [{title[:65]}]({url})\n🕕 Durasi : `{duration}` Menit\n👤 Diputar oleh : {chumtiya}\n\n📡 Streaming di​: `{message.chat.title}`\n",
+            text=f"**📡 STREAMING DI :** `{message.chat.title}`\n\n📌 **Judul :** [{title[:65]}]({url})\n🕕 **Durasi :** `{duration}` Menit\n👤 **Diputar oleh** : {chumtiya}\n\n⚡𝘱𝘰𝘸𝘦𝘳𝘦𝘥 𝘣y [Azuman-Project](https://t.me/azumanprojects)",
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("📝Command List", url=f"https://telegra.ph/COMMAND-LIST-06-10")
+                [InlineKeyboardButton("📝 Command List", url=f"https://telegra.ph/COMMAND-LIST-06-10")
                 ],
                 [
-                    InlineKeyboardButton("📥Support Grup", url=f"https://t.me/{SUPPORT_GROUP}"),
-                    InlineKeyboardButton("🔥Support Channel", url=f"https://t.me/AzumanProject")
+                    InlineKeyboardButton("📥 Support Grup", url=f"https://t.me/{SUPPORT_GROUP}"),
+                    InlineKeyboardButton("🔥 Support Channel", url=f"https://t.me/AzumanProject")
                 ],
-                [InlineKeyboardButton("🗑️Tutup", callback_data="close_play")
+                [InlineKeyboardButton("🗑️ Tutup", callback_data="close_play")
                 ],
             ]
         ),

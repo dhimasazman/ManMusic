@@ -22,7 +22,7 @@ async def pause(_, message: Message):
     await message.reply_text("Lagu berhasil dijeda ⏸️ ".format( message.from_user.mention ), )
 
 
-@Client.on_message(command(["resume"]) & other_filters)
+@Client.on_message(command(["resume", "lanjutkan"]) & other_filters)
 @errors
 @authorized_users_only
 async def resume(_, message: Message):
@@ -43,7 +43,7 @@ async def stop(_, message: Message):
 
     await message.delete()
     await callsmusic.pytgcalls.leave_group_call(message.chat.id)
-    await message.reply_text("Lagu berhasail diberhentikan ⏹️".format(
+    await message.reply_text("Lagu berhasil diberhentikan ⏹️".format(
       message.from_user.mention ), )
 
 @Client.on_message(command(["skip", "lewati"]) & other_filters)

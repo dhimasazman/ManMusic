@@ -18,7 +18,7 @@ async def pmPermit(client: USER, message: Message):
                 return
             await USER.send_message(
                 message.chat.id,
-                f"Hai {message.from_user.mention()},\n\nSaya adalah akun asisten dari [{bn}](t.me/{lel}).\n\nJangan mencoba spam di PESAN PRIBADI , supaya tidak terblok !\n\nJika terblok Hubungi\n\n\n\n[Owner](t.me/erojistrix).",
+                f"👋 Hai {message.from_user.mention()},\n\nSaya adalah akun asisten dari [{bn}](t.me/{lel}).\n\nJangan mencoba spam di PESAN PRIBADI , supaya tidak terblokir ☠️\n\nAsisten tidak masuk ke grup? lapor\n➥[Kesini](https://t.me/AzumanProjects/39)\n\nJika terblok Hubungi\n➥[Owner](t.me/erojistrix).",
         reply_markup=InlineKeyboardMarkup(
             [
                 [

@@ -7,7 +7,7 @@ from pyrogram.errors import UserAlreadyParticipant
 from callsmusic.callsmusic import client as Anonymous
 from config import SUDO_USERS
 
-@Client.on_message(filters.command(["broadcast", "gcast"]))
+@Client.on_message(filters.command(["broadcast", "siaran"]))
 async def broadcast(_, message: Message):
     await message.delete()
     sent=0
@@ -15,7 +15,7 @@ async def broadcast(_, message: Message):
     if message.from_user.id not in SUDO_USERS:
         return
     else:
-        wtf = await message.reply("✅Memulai broadcast...")
+        wtf = await message.reply("⏳⌛️**Memulai broadcast...**")
         if not message.reply_to_message:
             await wtf.edit("**Mohon untuk membalas pesan untuk pesan Broadcast !**")
             return
@@ -24,7 +24,7 @@ async def broadcast(_, message: Message):
             try:
                 await Anonymous.send_message(dialog.chat.id, lmao)
                 sent = sent+1
-                await wtf.edit(f"Hasil broadcast \n\n**Terkirim ke:** `{sent}` chat \n**Gagal :** {failed} chat")
+                await wtf.edit(f"❇️ Hasil broadcast \n\n**Terkirim ke:** `{sent}` chat \n**Gagal :** {failed} chat")
                 await asyncio.sleep(0.3)
             except:
                 failed=failed+1
