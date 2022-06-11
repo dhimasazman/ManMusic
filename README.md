@@ -22,12 +22,10 @@ get the session string by pressing the button below , and press `p`
 • [Callsmusic](http://github.com/callsmusic/callsmusic)
 • [Dan](https://github.com/delivrance) For [Pyrogram](https://github.com/pyrogram/pyrogram)
 
-### Get Problem? contact me on [![Azuman](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)
+### Get Problem? contact me on <a href="https://t.me/httAzumanProjects"><https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white>
 
 ### Need tutorial?
-• [Tutorial in YouTube](http://youtube.com/c/dhimasazman)
-• [Tutorial in Telegram](http://t.me/azumanprojects)
-• [Command List](https://telegra.ph/COMMAND-LIST-06-10)
+• [Tutorial in YouTube](http://youtube.com/c/dhimasazman)\n\n• [Tutorial in Telegram](http://t.me/azumanprojects)\n\n• [Command List](https://telegra.ph/COMMAND-LIST-06-10)
 
 ### Support And Updates
 <a href="https://t.me/httAzumanProjects"><img src="https://img.shields.io/badge/Join Support%20Support-black.svg?style=for-the-badge&logo=Telegram">
