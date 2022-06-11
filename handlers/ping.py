@@ -49,7 +49,7 @@ async def help(client: Client, message: Message):
     start = datetime.now()
     end = datetime.now()
     resp = (end - start).microseconds / 1000
-    await message.reply_sticker("⚡️")
+    await message.reply_sticker("CAACAgUAAxkBAAEENxZiNtPdibVkMsjLZrUG9NK4hotHQgAC2wEAAoM12VSdN9ujxVtnUyME")
     rahul = await message.reply_photo(
         photo=f"{PING_IMG}",
         caption="Pinging...",
@@ -60,10 +60,10 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "📥 Support", url=f"https://t.me/azumanprojects"
+                        "📥 ᴏꜰꜰɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/azumanprojects"
                     ),
                     InlineKeyboardButton(
-                        "📺 Youtube", url="https://www.youtube.com/c/dhimasazman"
+                        "📺 ʏᴏᴜᴛᴜʙᴇ", url="https://www.youtube.com/c/dhimasazman"
                     )
                 ]
             ]
