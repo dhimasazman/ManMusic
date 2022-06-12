@@ -14,7 +14,7 @@ def time_to_seconds(time):
     return sum(int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(':'))))
 
 
-@Client.on_message(filters.command(["song", "music", " vsong", "video"]) & ~filters.private & ~filters.channel)
+@Client.on_message(filters.command(["song", "music", " vsong", "download"]) & ~filters.private & ~filters.channel)
 def song(client, message):
 
     message.delete()
@@ -26,7 +26,7 @@ def song(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply("⏳⌛️**Sedang mengunduh mohon tunggu...**")
+    m = message.reply("⏳**Sedang mengunduh mohon tunggu...**")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -49,13 +49,13 @@ def song(client, message):
         )
         print(str(e))
         return
-    m.edit(f"📂**Sedang memproses mohon tunggu...")
+    m.edit(f"📂 **Sedang memproses mohon tunggu...**")
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f"❇️**Detail Pengunduhan :**\n\n🔍**Hasil penelusuruan** : {query}\n👤**Diminta oleh** : {chutiya} \n\n⚡𝘱𝘰𝘸𝘦𝘳𝘦𝘥 𝘣𝘺[Azuman-Project](https://t.me/azumanprojects))"
+        rep = f"❇️ **DETAIL PENGUNDUHAN :**\n\n🔍 ╔ **Hasil penelusuruan** : {query}\n👤 ╚ **Diminta oleh** : {chutiya} \n\n⚡𝘱𝘰𝘸𝘦𝘳𝘦𝘥 𝘣𝘺 [𝘼𝙯𝙪𝙢𝙖𝙣-𝙋𝙧𝙤𝙟𝙚𝙘𝙩](https://t.me/azumanprojects)"
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
