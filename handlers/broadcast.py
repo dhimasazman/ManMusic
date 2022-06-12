@@ -15,7 +15,7 @@ async def broadcast(_, message: Message):
     if message.from_user.id not in SUDO_USERS:
         return
     else:
-        wtf = await message.reply("⏳⌛️**Memulai broadcast...**")
+        wtf = await message.reply("⏳**Memulai broadcast...**")
         if not message.reply_to_message:
             await wtf.edit("**Mohon untuk membalas pesan untuk pesan Broadcast !**")
             return
