@@ -1,11 +1,20 @@
 <p align="center">
-      <img style="width:100px; height: 100px;"  src="https://telegra.ph/file/c823fea618f6c024e75a9.png"></p>
+      <img style="width:100px; height: 100px;"  src="https://telegra.ph/file/9a7828fb40ec2fb5dd0fd.png"></p>
 <h1 align="center"><b>ManMusic ✨</b></h1>
 <h2 align="center"><b>The Telegram Bot to play music in Voice chat Group</b></h2>
 
 <p align="center">
-  <img src="https://img.shields.io/github/stars/dhimasazman/ManMusic?style=for-the-badge&logo=appveyor" alt="Stars">
-  <img src="https://img.shields.io/github/forks/dhimasazman/ManMusic?style=for-the-badge&logo=appveyor" alt="Forks">
+  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/dhimasazman/manMusic">
+  <img alt="GitHub forks" src="https://img.shields.io/github/forks/dhimasazman/ManMusic">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/dhimasazman/ManMusic?logo=github">
+  <img alt="YouTube Channel Subscribers" src="https://img.shields.io/youtube/channel/subscribers/UC2MpGc29oa5FBCcOwtBGzQQ?style=social">
+  <img alt="YouTube Channel Views" src="https://img.shields.io/youtube/channel/views/UC2MpGc29oa5FBCcOwtBGzQQ?style=social">
+</p>
+
+### Preview
+
+<p align="center">
+      <img style="width:100px; height: 100px;"  src="https://telegra.ph/file/7ffc39a7789bb80175f70.png">
 </p>
 
 ### Deploy To Heroku
@@ -23,13 +32,11 @@ get the session string by pressing the button below , and press `p`
 - [Callsmusic](http://github.com/callsmusic/callsmusic)
 - [Dan](https://github.com/delivrance) For [Pyrogram](https://github.com/pyrogram/pyrogram)
 
-### ❓ Get Problem? contact me on <a href="https://t.me/erojistrix"><img src="https://img.shields.io/badge/Owner-black.svg?style=for-the-badge&logo=Telegram">
+### ❓ Get Problem? contact me on [Telegram](http://t.me/erojistrix)
 
 ### Need tutorial?
 - [Tutorial in YouTube](http://youtube.com/c/dhimasazman)
 - [Tutorial in Telegram](http://t.me/azumanprojects)
 - [Command List](https://telegra.ph/COMMAND-LIST-06-10)
 
-### Support And Updates
-<a href="https://t.me/AzumanProjects"><img src="https://img.shields.io/badge/Join Channel%20Up to date-black.svg?style=for-the-badge&logo=Telegram">
-<a href="https://t.me/AzumanSquad"><img src="https://img.shields.io/badge/Join Group%20Update-black.svg?style=for-the-badge&logo=Telegram">
+
