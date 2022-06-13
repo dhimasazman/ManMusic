@@ -24,13 +24,13 @@
 - `/ping` or Untuk mengecek bot (hidup/mati) / Check the bot
 
 ### For admin command :
-- `/pause or /jeda - Untuk menjeda lagu 
+- `/pause or /jeda` - Untuk menjeda lagu 
 - `/resume or /lanjutkan` - Untuk melanjutkan lagu
 - `/skip or /lewati` - Untuk melewati lagu berikutnya
 - `/end or /berhenti` - Untuk menghentikan lagu
 
 ### For assistant command
--`/login or /userbotjoin - Untuk memasukan asisten ke dalam grup
+-`/login or /userbotjoin` - Untuk memasukan asisten ke dalam grup
 
 ### Deploy To Heroku
 
