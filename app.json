@@ -11,39 +11,39 @@
       "required": true
     },
     "BOT_TOKEN": {
-      "description": "Dapatkan di @botfather Telegram !",
+      "description": "Dapatkan di @botfather Telegram.",
       "required": true
     },
     "BOT_NAME": {
-      "description": "Nama bot untuk Bot anda !",
+      "description": "Nama bot untuk Bot anda.",
       "required": false,
-      "value": ""
+      "value":  
     },
     "BOT_USERNAME": {
-      "description": "Username anda tanpa menggunakan @",
+      "description": "Username bot anda tanpa @.",
       "required": false,
-      "value": ""
+      "value": true 
     },
     "API_ID": {
-      "description": "Dapatkan di my.telegram.org/apps",
+      "description": "Dapatkan di my.telegram.org/apps.",
       "required": true
     },
     "API_HASH": {
-      "description": "Dapatkan di my.telegram.org/apps",
+      "description": "Dapatkan di my.telegram.org/apps.",
       "required": true
     },
     "OWNER_USERNAME": {
-      "description": "Nama pengguna orang yang akan diketahui sebagai pemilik bot, tanpa @",
+      "description": "Username owner akan ditambilkan di interface bot.",
       "required": false,
       "value": ""
     },
     "SUPPORT_GROUP": {
-      "description": "Username grup anda , tanpa @",
+      "description": "Username grup anda , tanpa @.",
       "required": false,
       "value": ""
     },
     "SUDO_USERS": {
-      "description": "ID Pengguna dari pengguna yang akan dihitung sebagai admin di mana-mana (jika lebih dari satu memisahkannya dengan spasi).",
+      "description": "ID Pengguna berguna untuk melakukan admin command (jika lebih dari satu memisahkannya dengan spasi).",
       "required": true,
       "value": ""
     },
