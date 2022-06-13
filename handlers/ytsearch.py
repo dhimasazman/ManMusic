@@ -16,15 +16,15 @@ import pyrogram
 
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
-@app.on_message(pyrogram.filters.command(["search"],["cari"]))
+@app.on_message(pyrogram.filters.command(["search" , "cari"]))
 async def ytsearch(_, message: Message):
     await message.delete()
     try:
         if len(message.command) < 2:
-            await message.reply_text("Ketikan judul untuk dicari...")
+            await message.reply_text("**Ketikan judul untuk dicari...**")
             return
         query = message.text.split(None, 1)[1]
-        m = await message.reply_text("**⏳⌛️**Sedang mengunduh mohon tunggu...**")
+        m = await message.reply_text("⏳**Sedang mengunduh mohon tunggu...**")
         results = YoutubeSearch(query, max_results=4).to_dict()
         i = 0
         text = ""
