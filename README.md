@@ -34,7 +34,11 @@ get the session string by pressing the button below , and press `p`
 - [Dan](https://github.com/delivrance) : [Pyrogram](https://github.com/pyrogram/pyrogram)
 - [Roj Serbest](http://github.com/rojserbest): Callsmusic Developer
 
-### ❓ Get Problem? contact me on [Telegram](http://t.me/erojistrix)
+### ❓ Get Problem? 
+
+<p align="center">
+      <a href="https://t.me/erojistrix"><img src="https://img.shields.io/badge/Contact%20Me-blue?style=for-the-badge&logo=telegram">
+            </p>
 
 ### Need tutorial?
 - [Tutorial in YouTube](http://youtube.com/c/dhimasazman)
@@ -43,7 +47,7 @@ get the session string by pressing the button below , and press `p`
 
 ### Join and Support
 
-< align ="center">
+<p align="center">
       <a href="https://t.me/azumanprojects"><img src="https://img.shields.io/badge/Join%20Channel-blue?style=for-the-badge&logo=telegram">
       <a href="https://t.me/azumansquad"><img src="https://img.shields.io/badge/Join%20Group-blue?style=for-the-badge&logo=telegram">
 </p>
