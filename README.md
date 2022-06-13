@@ -30,7 +30,7 @@
 - `/end or /berhenti` - Untuk menghentikan lagu
 
 ### For assistant command
--`/login or /userbotjoin` - Untuk memasukan asisten ke dalam grup
+- `/login or /userbotjoin` - Untuk memasukan asisten ke dalam grup
 
 ### Deploy To Heroku
 
