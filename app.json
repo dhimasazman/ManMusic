@@ -21,8 +21,8 @@
     },
     "BOT_USERNAME": {
       "description": "Username bot anda tanpa @.",
-      "required": false,
-      "value": true 
+      "required": true,
+      "value": ""
     },
     "API_ID": {
       "description": "Dapatkan di my.telegram.org/apps.",
@@ -33,7 +33,7 @@
       "required": true
     },
     "OWNER_USERNAME": {
-      "description": "Username owner akan ditambilkan di interface bot.",
+      "description": "Username owner akan ditambilkan di interface bot. tanpa @",
       "required": false,
       "value": ""
     },
@@ -43,7 +43,7 @@
       "value": ""
     },
     "SUDO_USERS": {
-      "description": "ID Pengguna berguna untuk melakukan admin command (jika lebih dari satu memisahkannya dengan spasi).",
+      "description": "ID Pengguna berguna untuk melakukan command admin (jika lebih dari satu memisahkannya dengan spasi).",
       "required": true,
       "value": ""
     },
