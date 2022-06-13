@@ -1,5 +1,5 @@
 <p align="center">
-      <img style="width:100px; height: 100px;"  src="https://telegra.ph/file/9a7828fb40ec2fb5dd0fd.png"></p>
+      <img style="width:500px; height: 500px;"  src="https://telegra.ph/file/9a7828fb40ec2fb5dd0fd.png"></p>
 <h1 align="center"><b>ManMusic ✨</b></h1>
 <h2 align="center"><b>The Telegram Bot to play music in Voice chat Group</b></h2>
 
@@ -14,7 +14,7 @@
 ### Preview
 
 <p align="center">
-      <img style="width:100px; height: 100px;"  src="https://telegra.ph/file/7ffc39a7789bb80175f70.png">
+      <img style="width:1080px; height: 1177px;"  src="https://telegra.ph/file/7ffc39a7789bb80175f70.png">
 </p>
 
 ### Deploy To Heroku
