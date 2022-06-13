@@ -1,5 +1,5 @@
 <p align="center">
-      <img style="width:300px; height:300px;"  src="https://telegra.ph/file/9a7828fb40ec2fb5dd0fd.png"></p>
+      <img style="width:200px; height:200px;"  src="https://telegra.ph/file/9a7828fb40ec2fb5dd0fd.png"></p>
 <h1 align="center"><b>ManMusic ✨</b></h1>
 <h2 align="center"><b>The Telegram Bot to play music in Voice chat Group</b></h2>
 
@@ -16,6 +16,21 @@
 <p align="center">
       <img src="https://telegra.ph/file/7ffc39a7789bb80175f70.png">
 </p>
+
+### For all command :
+- `/mainkan or /play` - Ketikan judul lagu atau URL YouTube
+- `/download or /song` - Ketikan judul lagu atau URL YouTube
+- `/cari or /search` - Ketikan judul lagu atau URL YouTube
+- `/ping` or Untuk mengecek bot (hidup/mati) / Check the bot
+
+### For admin command :
+- `/pause or /jeda - Untuk menjeda lagu 
+- `/resume or /lanjutkan` - Untuk melanjutkan lagu
+- `/skip or /lewati` - Untuk melewati lagu berikutnya
+- `/end or /berhenti` - Untuk menghentikan lagu
+
+### For assistant command
+-`/login or /userbotjoin - Untuk memasukan asisten ke dalam grup
 
 ### Deploy To Heroku
 
@@ -40,7 +55,7 @@ get the session string by pressing the button below , and press `p`
       <a href="https://t.me/erojistrix"><img src="https://img.shields.io/badge/Contact%20Me-blue?style=for-the-badge&logo=telegram">
             </p>
 
-### Need tutorial?
+### ❓ Need tutorial?
 - [Tutorial in YouTube](http://youtube.com/c/dhimasazman)
 - [Tutorial in Telegram](http://t.me/azumanprojects)
 - [Command List](https://telegra.ph/COMMAND-LIST-06-10)
