@@ -17,7 +17,7 @@
     "BOT_NAME": {
       "description": "Nama bot untuk Bot anda.",
       "required": false,
-      "value":  
+      "value": ""
     },
     "BOT_USERNAME": {
       "description": "Username bot anda tanpa @.",
