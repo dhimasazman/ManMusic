@@ -1,5 +1,5 @@
 <p align="center">
-      <img style="width:500px; height: 500px;"  src="https://telegra.ph/file/9a7828fb40ec2fb5dd0fd.png"></p>
+      <img style="width:300px; height:300px;"  src="https://telegra.ph/file/9a7828fb40ec2fb5dd0fd.png"></p>
 <h1 align="center"><b>ManMusic ✨</b></h1>
 <h2 align="center"><b>The Telegram Bot to play music in Voice chat Group</b></h2>
 
@@ -14,7 +14,7 @@
 ### Preview
 
 <p align="center">
-      <img style="width:1080px; height: 1177px;"  src="https://telegra.ph/file/7ffc39a7789bb80175f70.png">
+      <img src="https://telegra.ph/file/7ffc39a7789bb80175f70.png">
 </p>
 
 ### Deploy To Heroku
@@ -28,9 +28,11 @@ get the session string by pressing the button below , and press `p`
 [![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@DhimasAzman/Get-Session)
 
 ### ✨ Special thanks to these amazing projects/people which/who help power ManMusic :
+
 - [Sumit Yadav](http://github.com/Sumit9969/DarkxMusic)
 - [Callsmusic](http://github.com/callsmusic/callsmusic)
-- [Dan](https://github.com/delivrance) For [Pyrogram](https://github.com/pyrogram/pyrogram)
+- [Dan](https://github.com/delivrance) : [Pyrogram](https://github.com/pyrogram/pyrogram)
+- [Roj Serbest](http://github.com/rojserbest): Callsmusic Developer
 
 ### ❓ Get Problem? contact me on [Telegram](http://t.me/erojistrix)
 
@@ -39,4 +41,10 @@ get the session string by pressing the button below , and press `p`
 - [Tutorial in Telegram](http://t.me/azumanprojects)
 - [Command List](https://telegra.ph/COMMAND-LIST-06-10)
 
+### Join and Support
+
+< align ="center">
+      <a href="https://t.me/azumanprojects"><img src="https://img.shields.io/badge/Join%20Channel-blue?style=for-the-badge&logo=telegram">
+      <a href="https://t.me/azumansquad"><img src="https://img.shields.io/badge/Join%20Group-blue?style=for-the-badge&logo=telegram">
+</p>
 
