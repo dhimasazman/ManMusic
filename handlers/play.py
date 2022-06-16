@@ -55,7 +55,7 @@ async def play(_, message: Message):
 
     await message.delete()
 
-    fallen = await message.reply("⏳**Sedang mengunduh mohon tunggu...**")
+    fallen = await message.reply("⏳**Sedang memproses mohon tunggu...**")
 
     chumtiya = message.from_user.mention
 
