@@ -49,11 +49,13 @@
     },
     "START_IMG": {
       "description": "Tautan telegraph dari gambar yang ingin Anda atur sebagai gambar awal bot Anda",
-      "required": false
+      "required": true,
+      "value" : "https://telegra.ph/file/9b0dcdfc46809ec91e61c.jpg"
     },
     "PING_IMG": {
       "description": "Tautan telegraph dari gambar yang ingin Anda atur sebagai gambar ping bot Anda",
-      "required": false
+      "required": true,
+      "value" : "https://telegra.ph/file/87c10c0c7d1d219e9eb93.jpg"
     },
     "PMPERMIT": {
       "description": "Jika Anda ingin memberi tahu pengguna yang mengirim email ke akun asisten bahwa itu adalah akun asisten bot Anda, jadi jangan mengirim pesan spam di sana (ENABLE/DISABLE).",
