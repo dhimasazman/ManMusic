@@ -32,6 +32,20 @@
 ### For assistant command
 - `/login or /userbotjoin` - Untuk memasukan asisten ke dalam grup
 
+### Required for this project
+- `API_HASH` - Get this value on my.telegram.org
+- `API_ID` - Get this value on my.telegram.org
+- `BOT_NAME` - Name for your bot
+- `BOT_TOKEN` - Get this value on [BotFather](http://t.me/botfather)
+- `BOT_USERNAME` - Your bot username without @
+- `DURATION_LIMIT` - Song duration limit
+- `OWNER_USERNAME` - Music bot owner
+- `PING_IMG` - If you don't know this value, just skip it
+- `SESSION_NAME` - Get this value on [![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@DhimasAzman/Get-Session)
+- `START_IMG` - If you don't know this value, just skip it
+- `SUDO_USERS` - Get this value on [Rose](http://t.me/MissRose_Bot) or [ManMusic](http://t.me/azumanmusicplayerbot)
+- `SUPPORT_GROUP` - Your group username without @
+
 ### Deploy To Heroku
 
 [![Deploy+On+Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/dhimasazman/ManMusic)
@@ -51,7 +65,7 @@ get the session string by pressing the button below , and press `p`
 
 ### ❓ Get Problem? 
 
-<p align="center">
+<p align="left">
       <a href="https://t.me/erojistrix"><img src="https://img.shields.io/badge/Contact%20Me-blue?style=for-the-badge&logo=telegram">
             </p>
 
@@ -62,7 +76,7 @@ get the session string by pressing the button below , and press `p`
 
 ### Join and Support
 
-<p align="center">
+<p align="left">
       <a href="https://t.me/azumanprojects"><img src="https://img.shields.io/badge/Join%20Channel-blue?style=for-the-badge&logo=telegram">
       <a href="https://t.me/azumansquad"><img src="https://img.shields.io/badge/Join%20Group-blue?style=for-the-badge&logo=telegram">
 </p>
