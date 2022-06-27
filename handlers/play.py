@@ -236,7 +236,9 @@ async def play(_, message: Message):
                     InlineKeyboardButton("ᴏꜰꜰɪᴄɪᴀʟ ɢʀᴏᴜᴘ", url=f"https://t.me/{SUPPORT_GROUP}"),
                     InlineKeyboardButton("ᴏꜰꜰɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/azumanprojects")
                 ],
-                [InlineKeyboardButton("🗑️ ᴛᴜᴛᴜᴘ", callback_data="close_play")
+                [
+                    InlineKeyboardButton("🗑️ ᴛᴜᴛᴜᴘ", callback_data="close_play")
+                    InlineKeyboardButton("➥ ɪɴʟɪɴᴇ", switch_inline_query_current_chat="")
                 ],
             ]
         ),
