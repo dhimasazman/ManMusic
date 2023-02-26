@@ -7,8 +7,6 @@
   <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/dhimasazman/manMusic">
   <img alt="GitHub forks" src="https://img.shields.io/github/forks/dhimasazman/ManMusic">
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/dhimasazman/ManMusic?logo=github">
-  <img alt="YouTube Channel Subscribers" src="https://img.shields.io/youtube/channel/subscribers/UC2MpGc29oa5FBCcOwtBGzQQ?style=social">
-  <img alt="YouTube Channel Views" src="https://img.shields.io/youtube/channel/views/UC2MpGc29oa5FBCcOwtBGzQQ?style=social">
 </p>
 
 ### Preview
