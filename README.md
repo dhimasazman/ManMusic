@@ -47,6 +47,7 @@
 ### Deploy To Heroku
 
 ⚠️ <b>DISABLED!</b>
+<br>
 We’ve dropped support for Heroku.com after their parent company Salesforce started nuking accounts used for streaming/downloading/uploading to Telegram or similar platforms.
 
 ### String Session
